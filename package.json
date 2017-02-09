@@ -19,8 +19,8 @@
     "homebridge": ">=0.2.5"
   },
   "dependencies": {
-    "smtp-server": "^1.7.1",
-    "mailparser": "^0.5.3",
-    "debug": "^2.2.0"
+    "smtp-server": "^2.0.1",
+    "mailparser": "^2.0.1",
+    "debug": "^2.6.0"
   }
 }
