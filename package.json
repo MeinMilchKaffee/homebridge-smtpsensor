@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "smtp-server": "^2.0.1",
-    "mailparser": "^2.0.1",
+    "mailparser": "^0.5.3",
     "debug": "^2.6.0"
   }
 }
