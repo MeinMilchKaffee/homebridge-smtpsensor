@@ -43,10 +43,11 @@ SmtpSensorPlatform.prototype = {
                         if(sensorAccessories[i].pattern.test(mail_object.subject)){
                             debug("Sensor triggered on subject!");
                             sensorAccessories[i].changeHandler();
-                        }
-                        if(sensorAccessories[i].pattern.test(mail_object.text)){
-                            debug("Sensor triggered on body text!");
-                            sensorAccessories[i].changeHandler();
+                        } else {
+                            if(sensorAccessories[i].pattern.test(mail_object.text)){
+                                debug("Sensor triggered on body text!");
+                                sensorAccessories[i].changeHandler();
+                            }
                         }
                     }
                 });
